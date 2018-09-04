@@ -1,0 +1,60 @@
+<!-- dataLayer.push({'event': 'event_name'}); -->
+<!-- <a href="#" name="button1" onclick="dataLayer.push({'event': 'button1-click'});" >Button 1</a> -->
+<!-- dataLayer.push({'variable_name': 'variable_value'}); -->
+<!-- dataLayer.push({'color': 'red'}); -->
+<!-- Pusing Multiple dataLayer Varibles
+    dataLayer.push({
+      'color': 'red',
+      'conversionValue': 50,
+      'event': 'customizeCar'
+    });
+
+    <a href="#" name="color" onclick="dataLayer.push({'color': 'red', 'conversionValue': 50, 'event': 'customizeCar'});">Customize Color</a>
+-->
+
+<!-- Pusing dataLayer varibles from a Flash SWF
+  import flash.display.*;
+  import flash.events.*;
+  import flash.external.*;
+  mybutton_btn.addEventListener(MouseEvent.MOUSE_UP, onButtonClick);
+  function onButtonClick( Event:MouseEvent ):void {
+    var name:String= "FLASH_EVENT";
+    if (ExternalInterface.available) {
+      ExternalInterface.call('dataLayer.push',{'event': name});
+    }
+  }
+-->
+
+<!--
+  For the ExternalInterface method to function properly, please ensure that when embedding your SWF, the allowscriptaccess attribute is set to always:
+
+  <object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000'
+        width='300' height='300' id='player1' name='player1'>
+  <param name='movie' value='file.swf'>
+  <param name='allowfullscreen' value='true'>
+  <param name='allowscriptaccess' value='always'>
+  <param name='flashvars' value='file=playlist.xml'>
+  <embed id='player1' name='player1'
+         src='file.swf'
+         width='300' height='300'
+         allowscriptaccess='always'
+         allowfullscreen='true'
+         flashvars="file=playlist.xml"/>
+  </object>
+-->
+
+<!-- For browsers without JavaScript support -->
+  <!-- Google Tag Manager (noscript) -->
+    <!--
+      <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-XXXX&pageCategory=sports&visitorType=returning" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+    -->
+  <!-- End Google Tag Manager (noscript) -->
+
+<!-- Restricted Tag deployment (whitelist and blacklist tag id's in dataLayer)
+  dataLayer = [{...'gtm.whitelist': ['<ID>', '<ID>', ...] 'gtm.blacklist': ['<ID>', '<ID>', '<ID>', ...]}];
+  Note:
+    Blacklists overrride whitelists
+    Classes have relationships
+-->
