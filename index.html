@@ -9,6 +9,23 @@
         }];
     </script>
 
+    <script>
+      window.pAsyncInit = function() {
+          PDK.init({
+              appId: "<your app-id>", // Change this
+              cookie: true
+          });
+      };
+
+      (function(d, s, id){
+          var js, pjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {return;}
+          js = d.createElement(s); js.id = id;
+          js.src = "//assets.pinterest.com/sdk/sdk.js";
+          pjs.parentNode.insertBefore(js, pjs);
+      }(document, 'script', 'pinterest-jssdk'));
+    </script>
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
