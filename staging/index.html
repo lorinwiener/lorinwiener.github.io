@@ -10,128 +10,28 @@
     </script>
 
     <script language="JavaScript">
-
-      var cookie_name = "Custom_Strictly_Necessary_Cookie";
-
-      function write_cookie() {
-        if(document.cookie) {
-          index = document.cookie.indexOf(cookie_name);
-        } else {
-          index = -1;
-        }
-        if (index == -1) {
-          document.cookie=cookie_name+"=1; expires=Wednesday, 01-Aug-2040 08:00:00 GMT";
-        } else {
-          countbegin = (document.cookie.indexOf("=", index) + 1);
-          countend = document.cookie.indexOf(";", index);
-          if (countend == -1) {
-            countend = document.cookie.length;
-          }
-          count = eval(document.cookie.substring(countbegin, countend)) + 1;
-          document.cookie=cookie_name+"="+count+"; expires=Wednesday, 01-Aug-2040 08:00:00 GMT";
-        }
-      }
-
-      write_cookie();
-
-    </script>
-
-    <script language="JavaScript">
-
-      var cookie_name = "Custom_Performance_Cookie";
-
-      function write_cookie() {
-        if(document.cookie) {
-          index = document.cookie.indexOf(cookie_name);
-        } else {
-          index = -1;
-        }
-        if (index == -1) {
-          document.cookie=cookie_name+"=1; expires=Wednesday, 01-Aug-2040 08:00:00 GMT";
-        } else {
-          countbegin = (document.cookie.indexOf("=", index) + 1);
-          countend = document.cookie.indexOf(";", index);
-          if (countend == -1) {
-            countend = document.cookie.length;
-          }
-          count = eval(document.cookie.substring(countbegin, countend)) + 1;
-          document.cookie=cookie_name+"="+count+"; expires=Wednesday, 01-Aug-2040 08:00:00 GMT";
-        }
-      }
-
-      write_cookie();
-
-    </script>
-
-    <script language="JavaScript">
-
-      var cookie_name = "Custom_Functional_Cookie";
-
-      function write_cookie() {
-        if(document.cookie) {
-          index = document.cookie.indexOf(cookie_name);
-        } else {
-          index = -1;
-        }
-        if (index == -1) {
-          document.cookie=cookie_name+"=1; expires=Wednesday, 01-Aug-2040 08:00:00 GMT";
-        } else {
-          countbegin = (document.cookie.indexOf("=", index) + 1);
-          countend = document.cookie.indexOf(";", index);
-          if (countend == -1) {
-            countend = document.cookie.length;
-          }
-          count = eval(document.cookie.substring(countbegin, countend)) + 1;
-          document.cookie=cookie_name+"="+count+"; expires=Wednesday, 01-Aug-2040 08:00:00 GMT";
-        }
-      }
-
-      write_cookie();
-
-    </script>
-
-    <script language="JavaScript">
-
-      var cookie_name = "Custom_Social_Media_Cookie";
-
-      function write_cookie() {
-        if(document.cookie) {
-          index = document.cookie.indexOf(cookie_name);
-        } else {
-          index = -1;
-        }
-        if (index == -1) {
-          document.cookie=cookie_name+"=1; expires=Wednesday, 01-Aug-2040 08:00:00 GMT";
-        } else {
-          countbegin = (document.cookie.indexOf("=", index) + 1);
-          countend = document.cookie.indexOf(";", index);
-          if (countend == -1) {
-            countend = document.cookie.length;
-          }
-          count = eval(document.cookie.substring(countbegin, countend)) + 1;
-          document.cookie=cookie_name+"="+count+"; expires=Wednesday, 01-Aug-2040 08:00:00 GMT";
-        }
-      }
-
-    write_cookie();
-
+      document.cookie = "name=Custom_Strictly_Necessary_Cookie cookieCategory=1";
+      document.cookie = "name=Custom_Performance_Cookie cookieCategory=2";
+      document.cookie = "name=Custom_Functional_Cookie cookieCategory=3";
+      document.cookie = "name=Custom_Targeting_Cookie cookieCategory=4";
+      document.cookie = "name=Custom_Social_Media_Cookie cookieCategory=8";
     </script>
 
     <!-- Facebook Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    // Insert Your Facebook Pixel ID below. 
-    fbq('init', '123456');
-    fbq('track', 'PageView');
-    </script>
-    <!-- Insert Your Facebook Pixel ID below. -->
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=FB_PIXEL_ID&amp;ev=PageView&amp;noscript=1"
-    /></noscript>
+      <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      // Insert Your Facebook Pixel ID below.
+      fbq('init', '123456');
+      fbq('track', 'PageView');
+      </script>
+      <!-- Insert Your Facebook Pixel ID below. -->
+      <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=123456&amp;ev=PageView&amp;noscript=1"
+      /></noscript>
     <!-- End Facebook Pixel Code -->
 
     <title>GDPR Banner - Staging</title>
